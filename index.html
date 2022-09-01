@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav-links">
+            <li><h1 class="nav-title">Profile</h1></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active"><strong>My Profile</strong></a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn" onclick="edit2(this)"><strong>Sing Out</strong></button>
+    </div>     
+    <div class="cuerpo">   
+        <div class="izquierdo">
+            <div class="card">
+                <div class="card-header">
+                    <img src="./icons/user-circle.png" alt="Profile">
+                </div>
+                <div class="card-body">
+                    <h1 id="nombre">Joe Doe</h1>
+                    <h3><img src="./icons/map-marker.png" alt="Map"> Seatle</h3>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of Shadows and the Internet!</p>
+                    <div><img src="./icons/gear.png" alt="Configuration"> <a href="#" onclick="edit()">edit profile</a></div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="edu-header"><h2><strong>Education</strong></h2>
+                </div>
+                <div class="edu-body">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p>Dec 2019 - Mar 2020</p>
+                    <h3>Triple black belt in Python, MERN, and C#...</h3>
+                </div>
+            </div>
+        </div>
+        <div class="derecho">
+            <div class="solicitudes">
+                <div class="sol-header">
+                    <button class="sol">2</button>
+                    <h3>Connection Requests</h3>
+                </div>
+                <div class="sol-body">
+                    <div class="solicitud_1">
+                        <div class="sol-izq">
+                            <img src="./images/todd-s.jpg" alt="Todd E">
+                            <h3>Todd E</h3>
+                        </div>
+                        <div class="sol-der">
+                            <img src="./icons/accept-circle.png" alt="accept" id="accept" onclick="aceptar('.solicitud_1')">
+                            <img src="./icons/close-circle.png" alt="close" id="close" onclick="eliminar('.solicitud_1')">
+                        </div>
+                    </div>
+                    <div class="solicitud_2">
+                        <div class="sol-izq">
+                            <img src="./images/phil-s.jpg" alt="Phil K">
+                            <h3>Phill K</h3>
+                        </div>
+                        <div class="sol-der">
+                            <img src="./icons/accept-circle.png" alt="accept" id="accept" onclick="aceptar('.solicitud_2')">
+                            <img src="./icons/close-circle.png" alt="close" id="close" onclick="eliminar('.solicitud_2')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="amigos">
+                <div class="ami-header">
+                    <button class="ami">500+</button>
+                    <h3>Your Connections</h3>
+                </div>
+                <div class="ami-body">
+                    <div class="amigo_1">
+                        <img src="./images/adrien-s.jpg" alt="Adrien">
+                        <h3>Adrien D</h3>
+                    </div>
+                    <div class="amigo_2">
+                        <img src="./images/anne-s.jpg" alt="Anne">
+                        <h3>Anne J</h3>
+                    </div>
+                    <div class="amigo_3">
+                        <img src="./images/alayne-s.jpg" alt="Alayne">
+                        <h3>Alayne T</h3>
+                    </div>
+                    <div class="amigo_4">
+                        <img src="./images/arry-s.jpg" alt="Arry">
+                        <h3>Arry S</h3>
+                    </div>
+                    <div class="amigo_bottom"><a href="#"><strong>View More</strong></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

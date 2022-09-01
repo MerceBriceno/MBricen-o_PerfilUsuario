@@ -1,0 +1,159 @@
+/* Para todo el Perfil de Usuario */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+}
+/* Barra de Navegación */
+.nav {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin-right: 10px;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+.btn {
+    margin: 15px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(71, 219, 219);
+    color: white;
+    cursor: pointer;
+}
+/* Aquí comienxa el cuerpo de la página, el cual está dividido de la siguiente manera:
+1. Parte izquierda y Parte Derecha
+1.1 P_Izq: la tarjeta de presentación y educación
+1.2 P_Der: Solicitudes y Amidgos
+1.2.1 Solicitudes: encabezado (sol-header) y cuerpo (sol-body)
+1.2.1.1 cuerpo: Solicitud_1 (Todd) y Solicitud_2 (Phill)--> idem Solicitud_2
+1.2.1.1.1 Solicitud_1: sol-izqu (imagen y nombre) y sol-der (accept y close)
+1.2.2 Amigos: encabezado (ami-header) y cuerpo (ami-body)*/
+.cuerpo {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.izquierdo, .derecho {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/* Tarjeta */
+.card {
+    border: 1px solid gray;
+    width: 500px;
+    margin: 0 auto;
+}
+.card-header {
+    background-color: teal;
+    height: 80px;
+}
+.card-header img {
+    width:60px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+.card-body {
+    height: 180px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card-body img {
+    width: 10px;
+}
+/* Educación */
+.edu-header {
+    background-color: gray;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.edu-body {
+    padding: 20px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+} 
+/* Solicitudes */
+.solicitudes, .amigos {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ami-header, .sol-header {
+    width: 230px;
+    background-color: gray;
+    color: white;
+    padding: 6px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sol-body, .ami-body {
+    width: 230px;
+    padding: 5px;
+    border: 1px solid gray;  
+} 
+.solicitud_1, .solicitud_2 {
+    display: flex;
+    justify-content: space-between;
+}
+.sol-izq {
+    display: flex;
+    align-items: center;
+}
+.sol-der {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sol {
+    width: 25px;
+    height: 25px;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+}
+/* Amigos */
+.amigo_1, .amigo_2, .amigo_3, .amigo_4, .amigo_bottom {
+    display: flex;
+    align-items: center;
+}
+.ami-body img, .sol-body img {
+    width: 40px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.amigo_bottom {
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+.ami {
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+}
